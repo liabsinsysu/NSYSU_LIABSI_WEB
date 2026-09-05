@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import ScrollingImg from "./Component/ScrollingImg";
 import AboutUs from "./Component/AboutUs";
 

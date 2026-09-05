@@ -2,25 +2,32 @@
 import { useEffect, useState } from "react";
 
 const images: string[] = [
-  "/img/IMG_1.jpg",
-  "/img/IMG_2.jpg",
-  "/img/IMG_3.JPG",
-  "/img/IMG_4.jpg",
-  "/img/IMG_5.jpg",
+  "/img/groupPhoto/IMG_1.jpg",
+  "/img/groupPhoto/IMG_2.jpg",
+  "/img/groupPhoto/IMG_3.JPG",
+  "/img/groupPhoto/IMG_4.jpg",
+  "/img/groupPhoto/IMG_5.jpg",
+  "/img/groupPhoto/IMG_6.jpg",
 ];
 
 export default function ScrollingImg() {
   const [loaded, setLoaded] = useState(false);
 
-  useEffect (() => {
-    images.forEach((src) => {
-      const img = new Image();
-      img.src = src;
+  useEffect(() => {
+    const promises = images.map((src) => {
+      return new Promise<void>((resolve) => {
+        const img = new Image();
+
+        img.onload = () => resolve();
+        img.onerror = () => resolve();
+
+        img.src = src;
+      });
     });
 
-    const timer = setTimeout(() => setLoaded(true), 300);
-
-    return () => clearTimeout(timer);
+    Promise.all(promises).then(() => {
+      setLoaded(true);
+    });
   }, []);
 
   return (
@@ -33,9 +40,9 @@ export default function ScrollingImg() {
       )}
 
       <div
-        className={`flex gap-6 w-max animate-scroll transition-opacity duration-700 ${
-          loaded ? "opacity-100" : "opacity-0"
-        }`}
+        className={`flex gap-6 w-max animate-scroll will-change-transform transition-opacity duration-700 ${
+  loaded ? "opacity-100" : "opacity-0"
+}`}
       >
         {[...images, ...images].map((src, i) => (
           <img

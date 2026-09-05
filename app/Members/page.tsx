@@ -257,7 +257,7 @@ function AlumniModal({ data, onClose }: {
         />
 
         {/* 摘要 */}
-        <p className="text-gray-700 leading-relaxed">
+        <p className="text-gray-700 leading-relaxed whitespace-pre-line">
           {data.thesisAbtrast}
         </p>
       </div>

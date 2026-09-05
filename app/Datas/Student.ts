@@ -41,7 +41,7 @@ export const Student:(Student&Alumni)[]=[
     describe: "邵莉雅，於2021年畢業於中原大學物理系，並且在2023年取得國立中山大學電機工程所碩士。個性溫和，喜歡欣賞各種影集。",
     thesisTitle: "使用徑向三迴波穩態掃描進行三維全腦弛緩時間研究",
     projectorImgPath: "member/zoom/liya2.png",
-    thesisAbtrast: "● 使用黃金徑像取樣TESS掃描序列，定量MR弛緩時間參數：T1和T2。● 製作仿體進行實驗，針對方法進行驗證。● 受試者實驗，能以時間7分半鐘內完成全腦掃描，經計算獲得三維的T1和T2 map影像。",
+    thesisAbtrast: "● 使用黃金徑像取樣TESS掃描序列，定量MR弛緩時間參數：T1和T2。\n● 製作仿體進行實驗，針對方法進行驗證。\n● 受試者實驗，能以時間7分半鐘內完成全腦掃描，經計算獲得三維的T1和T2 map影像。",
   },
   {
     name: "楊翎",
@@ -97,7 +97,7 @@ export const Student:(Student&Alumni)[]=[
   {
     name: "謝旻霏",
     photoPath: "member/zoom/mf.jpg",
-    describe: "哈囉~ 我畢業於國立臺東大學資訊工程學系，並於2025年取得國立中山大學資工所碩士學位。我喜歡烘焙(有時候…)，旅遊和去海邊。去海邊是一件很放鬆的事~",
+    describe: "旻霏畢業於國立臺東大學資訊工程學系，並於2025年取得國立中山大學資工所碩士學位。我喜歡烘焙(有時候…)，旅遊和去海邊。去海邊是一件很放鬆的事~",
     thesisTitle: "透過徑向取樣定量磁場飄移及相位校正",
     projectorImgPath: "member/zoom/mf2.png",
     thesisAbtrast: "研究方向為磁振造影中的磁場飄移(field drift)校正與定量磁振技術。透過黃金角徑向取樣追蹤 k-space 中心點的相位變化，建立磁場飄移模型並進行相位校正，以降低磁場飄移對 TESS 影像與 T1/T2 定量結果的影響。",
