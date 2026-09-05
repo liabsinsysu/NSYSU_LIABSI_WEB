@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, SetStateAction } from "react";
-import { GraduateStudent, Student, AlumniData, CurrentStudent } from "../Datas/GraduateStudent";
+import { Student, AlumniData, CurrentStudent } from "../Datas/Student";
 
 type Identity = "Director" | "Current Student" | "Alumni";
 
@@ -115,7 +115,7 @@ function Director() {
     </div>
   );
 }
-
+// 在校生
 function Graduate() {
   return (
     <div className="mt-8 animate-fadeIn">
@@ -161,7 +161,7 @@ function StudentCard({ student }: { student: Student }) {
     </div>
   );
 }
-
+// 畢業生
 function Alumni() {
   const [selected, setSelected] = useState<AlumniData | null>(null);
 
@@ -173,7 +173,7 @@ function Alumni() {
 
       {/* 卡片 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {GraduateStudent.map((a, i) => (
+        {Student.map((a, i) => (
           <AlumniCard key={i} data={a} onClick={() => setSelected(a)} />
         ))}
       </div>
@@ -213,9 +213,11 @@ function AlumniCard({ data, onClick }: {
           {data.describe}
         </p>
 
+        {data.thesisTitle != "NULL" && (
         <div onClick={onClick} className="mt-auto pt-3 text-sm text-shadow-cyan-800 hover:underline text-right">
           View Thesis →
-        </div>
+        </div>)
+        }
       </div>
     </div>
   );

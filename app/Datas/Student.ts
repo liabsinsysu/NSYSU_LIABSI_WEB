@@ -1,12 +1,16 @@
 export const CurrentStudent:Student[]=[
-    {name:"黃宣慈",photoPath:"/member/zoom/cihh.jpg",describe:"這是宣慈，目前正就讀於國立中山大學資訊工程研究所。宣慈喜歡唱歌、跳舞和彈吉他，並且是個追星族，曾經在四天內看了日本和台灣共三場演唱會，完全是時間管理大師。未來也要努力賺錢，不然總有一天會散盡家財。"},
-    {name:"范依玟",photoPath:"/member/zoom/yiwen.jpg",describe:"這是依玟，畢業於國立暨南大學，目前就讀中山大學資工所。依玟喜歡打排球，但是研究所沒有機會打排球，所以跑去健身。平常休閒愛好是看LOL的比賽，希望將來出去工作可以賺大錢，出國去現場看比賽。"},
-    {name:"黃瑄貽",photoPath:"/member/zoom/hsuani.jpg",describe:"這是瑄貽，目前就讀中山電機工程所，她喜歡吃很辣的東西！很喜歡旅行出國玩所以會努力賺錢錢，她希望很近的未來是一位有錢人！"},
-    {name:"陳姵汶",photoPath:"/member/zoom/pw.jpg",describe:"姵汶很愛講話，有時候連自己都會懷疑:「我是不是有點太吵了?」。她也很愛講諧音梗，但實驗室的大家普遍都不捧場，只能自己默默離場QQ"},
-    {name:"麥明輝",photoPath:"/member/zoom/minghui.jpg",describe:"他是畢業於宜蘭大學電機系的INTJ，有空會到處玩到處吃，正在挑戰吃遍台北和高雄的拉麵地圖！也愛看劇、Kpop來放鬆戶外活動喜歡打球、騎腳踏車。在家偶爾會下廚，最拿手的是日式丼飯。他外表有點安靜的，不太像熱情型，但內心其實很想成為溫暖的人，正在努力中！"},
-    {name:"黃怡甄",photoPath:"/member/zoom/ichen.jpg",describe:"喜歡穿洋裝，喜歡保養，喜歡出去玩，但是不想曬太陽😐"},
-    {name:"林微訢",photoPath:"member/zoom/weihsin.jpg",describe:"微訢的能量沒有很高，有時候會看到他蹲著，但可以找他聊天，他會蠻開心的，也可以找他一起打桌球！"},
-]
+    {name:"黃宣慈", photoPath:"/member/zoom/cihh.jpg", describe:"這是宣慈，目前正就讀於國立中山大學資訊工程研究所。宣慈喜歡唱歌、跳舞和彈吉他，並且是個追星族，曾經在四天內看了日本和台灣共三場演唱會，完全是時間管理大師。未來也要努力賺錢，不然總有一天會散盡家財。"},
+    {name:"范依玟", photoPath:"/member/zoom/yiwen.jpg", describe:"這是依玟，畢業於國立暨南大學，目前就讀中山大學資工所。依玟喜歡打排球，但是研究所沒有機會打排球，所以跑去健身。平常休閒愛好是看LOL的比賽，希望將來出去工作可以賺大錢，出國去現場看比賽。"},
+    {name:"黃瑄貽", photoPath:"/member/zoom/hsuani.jpg", describe:"這是瑄貽，目前就讀中山電機工程所，她喜歡吃很辣的東西！很喜歡旅行出國玩所以會努力賺錢錢，她希望很近的未來是一位有錢人！"},
+    {name:"陳姵汶", photoPath:"/member/zoom/pw.jpg", describe:"姵汶很愛講話，有時候連自己都會懷疑:「我是不是有點太吵了?」。她也很愛講諧音梗，但實驗室的大家普遍都不捧場，只能自己默默離場QQ"},
+    {name:"麥明輝", photoPath:"/member/zoom/minghui.jpg", describe:"他是畢業於宜蘭大學電機系的INTJ，有空會到處玩到處吃，正在挑戰吃遍台北和高雄的拉麵地圖！也愛看劇、Kpop來放鬆戶外活動喜歡打球、騎腳踏車。在家偶爾會下廚，最拿手的是日式丼飯。他外表有點安靜的，不太像熱情型，但內心其實很想成為溫暖的人，正在努力中！"},
+    {name:"黃怡甄", photoPath:"/member/zoom/ichen.jpg", describe:"喜歡穿洋裝，喜歡保養，喜歡出去玩，但是不想曬太陽😐"},
+    {name:"林微訢", photoPath:"member/zoom/weihsin.jpg", describe:"微訢的能量沒有很高，有時候會看到他蹲著，但可以找他聊天，他會蠻開心的，也可以找他一起打桌球！"},
+    // {name:"余穎嵐", photoPath:"mamber/zoom/", describe:""},
+    // {name:"宋冠穎", photoPath:"mamber/zoom/", describe:""},
+    // {name:"王柏翔", photoPath:"mamber/zoom/", describe:""},
+    // {name:"林佳誼", photoPath:"mamber/zoom/", describe:""},
+  ]
 
 export interface Student{
     name:string,
@@ -22,7 +26,7 @@ export interface Alumni{
 
 export type AlumniData = Student & Alumni;
 
-export const GraduateStudent:(Student&Alumni)[]=[
+export const Student:(Student&Alumni)[]=[
   {
     name: "黃建榮",
     photoPath: "/member/zoom/rong.jpg",
@@ -47,14 +51,14 @@ export const GraduateStudent:(Student&Alumni)[]=[
     projectorImgPath: "member/zoom/R02.jpg",
     thesisAbtrast: "磁振造影（MRI）在現代醫學中扮演關鍵角色，尤其是T2的估計與血氧濃度的評估。本研究透過T2磁化準備技術於MRI中生成具有不同T2對比度的影像，以提升T2估算的精確度。採用特殊MRI掃描序列如背景抑制和bSSFP，並進行參數調整，結果顯示這些技術可以有效提高T2測量的精確性。",
   },
-  {
-    name: "潘文浩",
-    photoPath: "member/zoom/hank.jpg",
-    describe: "潘文浩於2021年畢業於國立屏東大學資訊工程學系,目前正就讀於國立中山大學資訊工程研究所。他平時的喜好諸如:閱讀小說、看影集……等等。",
-    thesisTitle: "利用磁化準備平衡穩定態序列定量血液T2：測量方法與變因",
-    projectorImgPath: "member/zoom/hank2.gif",
-    thesisAbtrast: "在他的碩士論文裡頭，主要內容為將原始取得的頭部MRI影像中的雜訊，透過濾波器的形式達到降噪的效果。",
-  },
+  // {
+  //   name: "潘文浩",
+  //   photoPath: "member/zoom/hank.jpg",
+  //   describe: "潘文浩於2021年畢業於國立屏東大學資訊工程學系,目前正就讀於國立中山大學資訊工程研究所。他平時的喜好諸如:閱讀小說、看影集……等等。",
+  //   thesisTitle: "NULL",
+  //   projectorImgPath: "",
+  //   thesisAbtrast: "",
+  // },
   
   {
     name: "王姿淇",
@@ -93,9 +97,9 @@ export const GraduateStudent:(Student&Alumni)[]=[
   {
     name: "謝旻霏",
     photoPath: "member/zoom/mf.jpg",
-    describe: "",
-    thesisTitle: "",
-    projectorImgPath: "member/zoom/",
-    thesisAbtrast: "",
+    describe: "哈囉~ 我畢業於國立臺東大學資訊工程學系，並於2025年取得國立中山大學資工所碩士學位。我喜歡烘焙(有時候…)，旅遊和去海邊。去海邊是一件很放鬆的事~",
+    thesisTitle: "透過徑向取樣定量磁場飄移及相位校正",
+    projectorImgPath: "member/zoom/mf2.png",
+    thesisAbtrast: "研究方向為磁振造影中的磁場飄移(field drift)校正與定量磁振技術。透過黃金角徑向取樣追蹤 k-space 中心點的相位變化，建立磁場飄移模型並進行相位校正，以降低磁場飄移對 TESS 影像與 T1/T2 定量結果的影響。",
   },
 ];
