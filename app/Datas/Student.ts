@@ -6,10 +6,10 @@ export const CurrentStudent:Student[]=[
     {name:"麥明輝", photoPath:"/member/zoom/minghui.jpg", describe:"他是畢業於宜蘭大學電機系的INTJ，有空會到處玩到處吃，正在挑戰吃遍台北和高雄的拉麵地圖！也愛看劇、Kpop來放鬆戶外活動喜歡打球、騎腳踏車。在家偶爾會下廚，最拿手的是日式丼飯。他外表有點安靜的，不太像熱情型，但內心其實很想成為溫暖的人，正在努力中！"},
     {name:"黃怡甄", photoPath:"/member/zoom/ichen.jpg", describe:"喜歡穿洋裝，喜歡保養，喜歡出去玩，但是不想曬太陽😐"},
     {name:"林微訢", photoPath:"member/zoom/weihsin.jpg", describe:"微訢的能量沒有很高，有時候會看到他蹲著，但可以找他聊天，他會蠻開心的，也可以找他一起打桌球！"},
-    // {name:"余穎嵐", photoPath:"mamber/zoom/", describe:""},
-    // {name:"宋冠穎", photoPath:"mamber/zoom/", describe:""},
-    // {name:"王柏翔", photoPath:"mamber/zoom/", describe:""},
-    // {name:"林佳誼", photoPath:"mamber/zoom/", describe:""},
+    {name:"余穎嵐", photoPath:"member/zoom/yinglan.jpg", describe:"穎嵐體內同時住著吉伊和烏薩奇，平常預設運行吉伊模式，但偶爾會毫無預警切換成烏薩奇模式，目前切換機制仍是未知 bug。"},
+    // {name:"宋冠穎", photoPath:"member/zoom/", describe:""},
+    // {name:"王柏翔", photoPath:"member/zoom/", describe:""},
+    // {name:"林佳誼", photoPath:"member/zoom/", describe:""},
   ]
 
 export interface Student{
